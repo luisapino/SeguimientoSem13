@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimientosem13.Control.ChangePassController">
+   <children>
+      <Button fx:id="changePassBTT" layoutX="162.0" layoutY="292.0" mnemonicParsing="false" onAction="#changePass" style="-fx-background-color: lightblue;" text="CAMBIAR LA CLAVE" />
+      <Button fx:id="closeBoxBTT" layoutX="329.0" layoutY="292.0" mnemonicParsing="false" onAction="#closeBox" style="-fx-background-color: lightblue;" text="CERRAR LA CAJA" />
+      <Label layoutX="228.0" layoutY="52.0" text="CAJA FUERTE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="115.0" text="Digite la combinación actual" />
+      <Label layoutX="235.0" layoutY="213.0" text="Digite la nueva combinación" />
+      <HBox fx:id="actComHBox" layoutX="217.0" layoutY="146.0" prefHeight="36.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="actTF1" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="actTF2" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="actTF3" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="actTF4" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="actTF5" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="actTF6" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="newComHbox" layoutX="217.0" layoutY="232.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="newTF1" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="newTF2" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="newTF3" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="newTF4" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="newTF5" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+            <TextField fx:id="newTF6" onKeyTyped="#onKey" prefHeight="35.0" prefWidth="40.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
